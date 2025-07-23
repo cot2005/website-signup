@@ -56,7 +56,7 @@
 
 
 					</div>
-						<a href="#main" class="goto-next">Next</a>
+						<a href="#main" class="goto-next"></a>
 					</div>
 
 
@@ -259,6 +259,23 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- custom script to prevent adding tags each time a button is clicked -->
+			<script> document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault(); // Prevent URL hash update
+
+					const targetId = this.getAttribute('href').substring(1);
+					const target = document.getElementById(targetId);
+
+					if (target) {
+					target.scrollIntoView({ behavior: 'smooth' });
+					}
+				});
+			});
+			</script>
+
+
 
 	</body>
 </html>

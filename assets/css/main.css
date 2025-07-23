@@ -1853,12 +1853,14 @@ input, select, textarea {
 	}
 
 		.image:before {
+			background: url("images/overlay.png");
 			content: '';
 			height: 100%;
 			left: 0;
 			position: absolute;
 			top: 0;
 			width: 100%;
+			opacity: 0.25;
 		}
 
 		.image.fit {
@@ -2604,19 +2606,34 @@ input, select, textarea {
 	}
 
 	#banner {
-		background-attachment: scroll, scroll, scroll, fixed;
+		background-attachment: scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/lighthouse_2.png");
-		background-position: bottom left, bottom right, top left, top center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("../../images/lighthouse_2.png");
+		background-position: bottom left, bottom right, top center;
+		background-repeat: no-repeat, no-repeat, no-repeat;
+		background-size: 25em, 25em, cover;
 		color: #fff;
 		cursor: default;
 		text-align: center;
 		min-height: 100vh;
 		padding: 8em 0;
-
+		position: relative; /* Required for positioning the :before */
+		overflow: hidden;
 	}
+
+	#banner:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url("images/overlay.png") repeat;
+		opacity: 0.5; /* Adjust the transparency here */
+		z-index: 0;
+		pointer-events: none; /* So it doesn’t interfere with clicks */
+	}
+
 
 		#banner .inner {
 			-moz-animation: reveal-banner 1s 0.25s ease-in-out;
@@ -2706,15 +2723,31 @@ input, select, textarea {
 /* CTA */
 
 	#cta {
-		background-attachment: scroll, scroll, scroll, fixed;
+		background-attachment: scroll, scroll, fixed; /* Removed one scroll */
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../../images/lighthouse.jpeg");
-		background-position: top left, top right, top left, bottom center;
-		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
-		background-size: 25em, 25em, auto, cover;
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("../../images/lighthouse.jpeg"); /* Removed overlay.png */
+		background-position: top left, top right, bottom center;
+		background-repeat: no-repeat, no-repeat, no-repeat;
+		background-size: 25em, 25em, cover;
 		color: #fff;
 		padding: 5em;
 		text-align: center;
+		position: relative; /* Required for pseudo-element positioning */
+		overflow: hidden;   /* Ensures the overlay doesn't spill out */
+	}
+
+
+	#cta:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url("images/overlay.png");
+		opacity: 0.5; /* Adjust opacity here */
+		pointer-events: none;
+		z-index: 0;
 	}
 
 		#cta header {
