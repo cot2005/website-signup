@@ -7,6 +7,19 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+/* CT global preferences */
+:root {
+  --main-color: #78B7C5;
+  --accent-color: #83d3c9;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -122,6 +135,10 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 400;
+	}
+
+	em, i {
+		font-style: italic;
 	}
 
 	p, ul, ol, dl, table, blockquote {
@@ -1814,7 +1831,7 @@ input, select, textarea {
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		textarea:focus {
-			border-color: #83d3c9;
+			border-color: var(--main-color);
 		}
 
 	input[type="text"],
@@ -1860,7 +1877,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			width: 100%;
-			opacity: 0.25;
+			opacity: 0.2;
 		}
 
 		.image.fit {
@@ -2211,8 +2228,8 @@ input, select, textarea {
 		input[type="reset"].primary,
 		button.primary,
 		.button.primary {
-			background: #83d3c9;
-			border-color: #83d3c9;
+			background: var(--main-color);
+			border-color: var(--main-color);
 			color: #fff !important;
 		}
 
@@ -2254,7 +2271,7 @@ input, select, textarea {
 			box-shadow: none !important;
 			color: #ffffff !important;
 			cursor: default;
-			opacity: 0.25;
+			opacity: 0.5;
 		}
 
 /* Wrapper */
@@ -2269,7 +2286,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #83d3c9;
+			background-color: var(--main-color);
 			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
@@ -2292,7 +2309,7 @@ input, select, textarea {
 			.wrapper.style2 .button.primary {
 				background: #fff;
 				border-color: #fff;
-				color: #83d3c9 !important;
+				color: var(--main-color) !important;
 			}
 
 				.wrapper.style2 input[type="button"].primary:hover,
@@ -2555,7 +2572,7 @@ input, select, textarea {
 			}
 
 			.dropotron > li:hover > a {
-				background: #83d3c9;
+				background: var(--main-color);
 				color: #fff;
 			}
 
@@ -2608,7 +2625,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("../../images/lighthouse_2.png");
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("../../images/map_6.jpeg");
 		background-position: bottom left, bottom right, top center;
 		background-repeat: no-repeat, no-repeat, no-repeat;
 		background-size: 25em, 25em, cover;
@@ -2644,7 +2661,7 @@ input, select, textarea {
 			-webkit-animation-fill-mode: forwards;
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-			background: rgba(52, 27, 43, 0.2);
+			background: rgba(52, 27, 43, 0.5);
 			color: #fff;
 			display: inline-block;
 			opacity: 0;
@@ -2725,10 +2742,10 @@ input, select, textarea {
 	#cta {
 		background-attachment: scroll, scroll, fixed; /* Removed one scroll */
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("../../images/lighthouse.jpeg"); /* Removed overlay.png */
-		background-position: top left, top right, bottom center;
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("../../images/map_7_2.jpeg"); /* Removed overlay.png */
+		background-position: top left, top right, bottom left;
 		background-repeat: no-repeat, no-repeat, no-repeat;
-		background-size: 25em, 25em, cover;
+		background-size: 25em, 25em, contain;
 		color: #fff;
 		padding: 5em;
 		text-align: center;
@@ -3500,6 +3517,9 @@ input, select, textarea {
 	z-index: 2;
 }
 
+
+
+/* Form Row */
 .form-row {
   display: flex;
   width: 100%;
@@ -3518,7 +3538,9 @@ input, select, textarea {
   width: 100%; /* ensures it stretches */
 }
 
-
-html {
-  scroll-behavior: smooth;
+/* 👇 Add this to style focus border */
+.form-row input[type="email"]:focus,
+.form-row textarea:focus {
+  border-color: var(--main-color);
+  outline: none; /* Optional: remove default blue outline */
 }
