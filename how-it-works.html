@@ -1,0 +1,449 @@
+<!DOCTYPE HTML>
+<!--
+	Twenty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Pre-release</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="pre-release is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Ourix-AI</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li class="current"><a href="#main">How it works</a></li>
+							<li><a href="pre-release.html">Pre-release</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon solid fa-lightbulb"></span>
+						<h2>🔧 How it Works 🔧</h2>
+						<p>More information on our vision and approach.</p>
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 container">
+
+							<!-- Content -->
+								<div class="content">
+									<section>
+										<header>
+											<h3>Our vision</h3>
+										</header>
+										<p>When I first explored the stock market, I quickly realized investing can be complex, time‑consuming, and risky. Unless you stick with index funds, you risk losing money fast. But if you avoid index funds in hopes of earning more than 6–8% annually, you’re faced with two options: spend hours every day researching and monitoring the market, or take chances on high‑risk assets. Both demand extensive market research—something I didn’t have the time or appetite for. </br></br>
+										That’s where the idea for Ourix-AI began: a platform that sits between passive index investing and high‑risk speculation. It empowers retail investors to potentially grow wealth faster by leveraging AI for investment guidance—even with no background in finance or machine learning. The platform has four main objectives:
+										
+										<ol>
+											<li><strong>Performance</strong>: <i>Grow wealth as effectively as possible.</i></li>
+											<li><strong>Accessibility</strong>: <i>Make the tools affordable and available to everyone.</i></li>
+											<li><strong>Simplicity</strong>: <i>Everyone can use it, regardless of their backgrounds.</i></li>
+											<li><strong>Transparency</strong>: <i>Prove its past success, show everyone why we believe it works, for free.</i></li>
+										</ol>
+
+										Ourix-AI achieves this by scouring the internet for data aligned with a chosen strategy, analyzes it alongside years of historical market data, and uses machine learning models to generate investment signals. These strategies are rigorously backtested, then connected to brokerage APIs for fully automated execution—removing user bias and error. </br></br>
+										All an investor needs to do is pick a stock list and select a proven, well‑documented strategy. Ourix-AI handles the rest: market research, signal generation, and portfolio management. We believe this is just the beginning of a platform that can transform how retail investors build wealth.
+										</p>
+										<a class="image featured"><img src="images/diagram_1.jpeg" alt="" /></a>
+										<p><i>Integration of ML models, technical, fundamental, and sentiment data to drive principled strategies that help you grow your investments faster.</i></p>
+
+										<header>
+											<h3>What is it right now?</h3>
+										</header>
+										<p>Currently, we have eight modular investment strategies that can be paired with any stock list—of any size—to generate historical performance results for analysis. Each strategy is trained on at least six years of historical data covering over 500 stocks, then validated on two or more years of data across 1,000+ stocks.</br></br>
+											We’re continuing to expand our strategy library by incorporating new types of market data and exploring novel analytical approaches that can inform better financial decisions. These innovations will drive the creation of even more strategies over time.</br></br>
+											For automated portfolio management, we have begun experimenting with Alpaca Securities as our initial brokerage (with more to come). With an Alpaca account, our platform can execute trades and manage portfolios in line with the selected strategy. This can also be done manually, as most strategies average fewer than ten stock orders per week.</br></br>
+											Using this approach, we’ve been able to prototype and test our strategies—and combinations of them—in Alpaca accounts, consistently achieving returns that outperform the market.
+										</p>
+
+									</section>
+								</div>
+
+						</section>
+
+					<!-- Two -->
+						<section class="wrapper style1 container special">
+							<div class="row">
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<header>
+											<h3>Stock Lists</h3>
+										</header>
+										<p>We offer five preset stock lists for you to explore with any available strategy during the pre‑release stage.</p>
+									</section>
+
+								</div>
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<header>
+											<h3>Strategies</h3>
+										</header>
+										<p>Choose from four proven strategies and combine them with any of our preset stock lists to create your personalized investment approach.</p>
+
+									</section>
+
+								</div>
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<header>
+											<h3>Automation</h3>
+										</header>
+										<p>Though we cannot currently offer this at the moment, we are working with Alpaca to see if this can be made available with existing accounts for the pre-release service.</p>
+
+									</section>
+
+								</div>
+							</div>
+						</section>
+
+				<!-- Table -->
+					<section class="wrapper style5 container special">
+
+						<!-- Content -->
+							<h3>Example Tables for constructing portfolios</h3>
+							<h4>Stock List Table</h4>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Number of Stocks</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>High_Volatility</td>
+											<td>Stocks with high betas (>1.25) and medium liquidity (avg vol > 200k)</td>
+											<td>120</td>
+										</tr>
+										<tr>
+											<td>Stable_profit</td>
+											<td>Profitable stocks with revenue growth of >0% and a low P/E</td>
+											<td>243</td>
+										</tr>
+										<tr>
+											<td><a href="#" class="openModal" data-file="Index_stocks.txt">Index_Stocks</a></td>
+											<td>Non-overlapping Stocks in the S&P500, Dow-30, or Nasdaq-100</td>
+											<td>506</td>
+										</tr>
+										<tr>
+											<td>Div_Stocks</td>
+											<td>Stocks with dividend payments of >0.5% in the past year</td>
+											<td>317</td>
+										</tr>
+										<tr>
+											<td>Tech_Telecom</td>
+											<td>Stocks in the Tech and Telecom sectors</td>
+											<td>526</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<h4>Strategy Table</h4>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Index</th>
+											<th>Brief Description</th>
+											<th>Average Orders <br> per week</th>
+											<th>Average Holding <br> Period (Days)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>s1</td>
+											<td>Frequent trading with high portfolio diversity.</td>
+											<td>7.64</td>
+											<td>14.72</td>
+										</tr>
+										<tr>
+											<td>s2</td>
+											<td>Infrequent trading with medium portfolio diversity.</td>
+											<td>5.32</td>
+											<td>20.41</td>
+										</tr>
+										<tr>
+											<td>s6</td>
+											<td>Conservative on entries but fast on exits with high portfolio diversity.</td>
+											<td>5.73</td>
+											<td>19.23</td>
+										</tr>
+										<tr>
+											<td>s8</td>
+											<td>Long holds with high market exposure</td>
+											<td>4.15</td>
+											<td>22.59</td>
+										</tr>
+									</tbody>
+								</table>
+								<i>Select sample strategies with brief descriptions of their investment style and how long each investment is typically held for.</i>
+							</div>
+					</section>
+
+					<section class="wrapper style5 container special">
+
+							<!-- Content -->
+							<h3>Example Portfolio Catalog</h3>
+
+							<div class="table-wrapper">
+								<table class="alt">
+									<thead>
+										<tr>
+											<th>Stock List</th>
+											<th>Strategy Index</th>
+											<th>Sharpe Ratio</th>
+											<th>Beta</th>
+											<th>Portfolio Performance (6yr)</th>
+											<th>Report Summary</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Tech_Telecom</td>
+											<td>s1</td>
+											<td>1.009</td>
+											<td>1.157</td>
+											<td>+648.2%</td>
+											<td><a href="s1_Tech_Telecom.html">View Results</a></td>
+										</tr>
+										<tr>
+											<td>Index_Stocks</td>
+											<td>s2</td>
+											<td>1.604</td>
+											<td>1.018</td>
+											<td>+899.54%</td>
+											<td>coming soon</td>
+										</tr>
+										<tr>
+											<td>Stable_profit</td>
+											<td>s2</td>
+											<td>1.010</td>
+											<td>1.005</td>
+											<td>+351.68%</td>
+											<td><a href="s2_Stable_profit.html">View Results</a></td>
+										</tr>
+										<tr>
+											<td>High_Volatility</td>
+											<td>s6</td>
+											<td>0.049</td>
+											<td>1.374</td>
+											<td>+58.58%</td>
+											<td>coming soon</td>
+										</tr>
+										<tr>
+											<td>Index_Stocks</td>
+											<td>s6</td>
+											<td>1.505</td>
+											<td>1.111</td>
+											<td>+716%</td>
+											<td><a href="s6_Index_Stocks.html">View Results</a></td>
+										</tr>
+										<tr>
+											<td>Div_Stocks</td>
+											<td>s8</td>
+											<td>0.911</td>
+											<td>1.154</td>
+											<td>+348.25%</td>
+											<td>coming soon</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<i>*Select sample portfolios from the combination of a preset stock list and a tested strategy. Go to the Report Summary to get more details on how this strategy performed.
+								In depth reports will also be made available.
+							</i>
+
+					</section>
+			</article>
+
+			<!-- CTA -->
+				<section id="cta">
+
+					<header>
+						<h2>Interested in our pre-release service?</h2>
+					</header>
+					<footer>
+						<ul class="buttons">
+							<li><a href="pre-release.html" class="button primary">Send us a message!</a></li>
+						</ul>
+					</footer>
+
+				</section>
+
+
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="copyright">
+						<li>&copy; Ourix-AI</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>View Table Popup Example</title>
+  <style>
+    /* Only style the modal overlay */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      padding-top: 80px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+
+    /* Only style the modal content */
+    .modal-content {
+      background: white;
+      margin: auto;
+      padding: 20px;
+      width: 60%;
+      border-radius: 8px;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+
+
+    /* Close button styling */
+    .close {
+      color: #ccc;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* Style ONLY the table inside the modal */
+    .modal-content table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+
+	/* Make table headers in modal visible */
+	.modal-content th {
+	background-color: white;  /* Light gray background */
+	color: rgba(0,0,0,0.5);                /* Black text */
+	font-weight: bold;
+	}
+
+
+    .modal-content td {
+      border: 1px solid #ccc;
+      padding: 6px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="modalTitle">Loaded Table</h2>
+    <div id="tableContainer">Loading...</div>
+  </div>
+</div>
+
+<script>
+// Attach click handler to each link
+document.querySelectorAll(".openModal").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    const fileName = this.dataset.file; // which file to load
+    const portfolioName = this.closest("tr").children[0].textContent; // first column text
+
+    // Update modal title
+    document.getElementById("modalTitle").textContent = portfolioName + " List";
+
+    // Show modal
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("tableContainer").innerHTML = "Loading...";
+
+    // Fetch and parse table from TXT file
+    fetch(fileName)
+      .then(response => response.text())
+      .then(text => {
+        // Assume tab-delimited text file
+        let rows = text.trim().split("\n").map(r => r.split("\t"));
+        let html = "<table><thead><tr>";
+        html += rows[0].map(h => `<th>${h}</th>`).join("");
+        html += "</tr></thead><tbody>";
+        for (let i = 1; i < rows.length; i++) {
+          html += "<tr>" + rows[i].map(c => `<td>${c}</td>`).join("") + "</tr>";
+        }
+        html += "</tbody></table>";
+        document.getElementById("tableContainer").innerHTML = html;
+      })
+      .catch(err => {
+        document.getElementById("tableContainer").innerHTML = "Error loading table.";
+        console.error(err);
+      });
+  });
+});
+
+// Close modal when clicking X
+document.querySelector(".close").addEventListener("click", function() {
+  document.getElementById("myModal").style.display = "none";
+});
+
+// Close modal when clicking outside content
+window.addEventListener("click", function(event) {
+  if (event.target == document.getElementById("myModal")) {
+    document.getElementById("myModal").style.display = "none";
+  }
+});
+</script>
+
+</body>
+</html>
