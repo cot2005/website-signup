@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="no-sidebar is-preload">
+	<body class="pre-release is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
@@ -146,23 +146,28 @@
 									<tbody>
 										<tr>
 											<td>High_Volatility</td>
-											<td>Stocks with high betas (>1.25) and medium liquidity (avg vol > 200k).</td>
-											<td>150</td>
+											<td>Stocks with high betas (>1.25) and medium liquidity (avg vol > 200k)</td>
+											<td>120</td>
+										</tr>
+										<tr>
+											<td>Stable_profit</td>
+											<td>Profitable stocks with revenue growth of >0% and a low P/E</td>
+											<td>243</td>
 										</tr>
 										<tr>
 											<td>Index_Stocks</td>
 											<td>Non-overlapping Stocks in the S&P500, Dow-30, or Nasdaq-100</td>
-											<td>510</td>
+											<td>508</td>
 										</tr>
 										<tr>
 											<td>Div_Stocks</td>
 											<td>Stocks with dividend payments of >0.5% in the past year</td>
-											<td>320</td>
+											<td>317</td>
 										</tr>
 										<tr>
 											<td>Tech_Telecom</td>
 											<td>Stocks in the Tech and Telecom sectors</td>
-											<td>510</td>
+											<td>526</td>
 										</tr>
 									</tbody>
 								</table>
@@ -215,27 +220,59 @@
 										<tr>
 											<th>Stock List</th>
 											<th>Strategy Index</th>
+											<th>Sharpe Ratio</th>
+											<th>Beta</th>
 											<th>Portfolio Performance (6yr)</th>
 											<th>Report Summary</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td>High_Volatility</td>
-											<td>s6</td>
-											<td>+59.2%</td>
-											<td>coming soon</td>
+											<td>Tech_Telecom</td>
+											<td>s1</td>
+											<td>1.009</td>
+											<td>1.157</td>
+											<td>+648.2%</td>
+											<td><a href="s1_Tech_Telecom.html">View Results</a></td>
 										</tr>
 										<tr>
 											<td>Index_Stocks</td>
 											<td>s2</td>
-											<td>+915.3%</td>
-											<td><a href="test_report.html">View Results</a></td>
+											<td>1.604</td>
+											<td>1.018</td>
+											<td>+899.54%</td>
+											<td>coming soon</td>
+										</tr>
+										<tr>
+											<td>Stable_profit</td>
+											<td>s2</td>
+											<td>1.010</td>
+											<td>1.005</td>
+											<td>+351.68%</td>
+											<td><a href="s2_Stable_profit.html">View Results</a></td>
+										</tr>
+										<tr>
+											<td>High_Volatility</td>
+											<td>s6</td>
+											<td>0.049</td>
+											<td>1.374</td>
+											<td>+58.58%</td>
+											<td>coming soon</td>
+										</tr>
+										<tr>
+											<td>Index_Stocks</td>
+											<td>s6</td>
+											<td>1.505</td>
+											<td>1.111</td>
+											<td>+716%</td>
+											<td><a href="s6_Index_Stocks.html">View Results</a></td>
 										</tr>
 										<tr>
 											<td>Div_Stocks</td>
 											<td>s8</td>
-											<td>+340%</td>
+											<td>0.911</td>
+											<td>1.154</td>
+											<td>+348.25%</td>
 											<td>coming soon</td>
 										</tr>
 									</tbody>
@@ -268,7 +305,7 @@
 				<footer id="footer">
 
 					<ul class="copyright">
-						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; OtisAI</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 				</footer>
