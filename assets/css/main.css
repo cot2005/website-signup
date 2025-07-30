@@ -2745,7 +2745,7 @@ input, select, textarea {
 		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("../../images/map_7_2.jpeg"); /* Removed overlay.png */
 		background-position: top left, top right, bottom left;
 		background-repeat: no-repeat, no-repeat, no-repeat;
-		background-size: 25em, 25em, contain;
+		background-size: 25em, 25em, auto;
 		color: #fff;
 		padding: 5em;
 		text-align: center;
