@@ -1846,7 +1846,7 @@ input, select, textarea {
 
 	::-webkit-input-placeholder {
 		color: inherit;
-		opacity: 0.5;
+		opacity: 0.8;
 		position: relative;
 		top: 3px;
 	}
@@ -1902,6 +1902,33 @@ input, select, textarea {
 				display: block;
 				width: 100%;
 			}
+		
+		.image.reduced {
+			display: block;
+			margin: 0 auto;           /* centers the container if it has a set width */
+			background-color: #fff !important;   /* white background */
+			text-align: center;       /* centers inline-block elements like img */
+		}
+
+			.image.reduced img {
+				display: block;
+				width: 80%;
+				margin: 0 auto;           /* centers the image itself */
+			}
+
+			.image.reduced:before {
+				background: none;   /* removes overlay background */
+				content: none;      /* removes the pseudo-element entirely */
+			}
+
+			.image.reduced .caption {
+				width: 80%;         /* matches image width */
+				margin: 0 auto;     /* centers the text block */
+				font-size: inherit;   /* slightly smaller text */
+				color: rgba(124, 128, 129, 0.9);        /* dark gray for readability */
+				padding-bottom: 2em; /* space below caption */
+			}
+
 
 /* Icon */
 
@@ -2001,6 +2028,18 @@ input, select, textarea {
 				.icon.circle.fa-dribbble:hover {
 					background: #df93b8;
 				}
+
+		.icon.solution {
+			cursor: default;
+			display: block;
+			margin: 0 0 1.5em 0;
+			text-align: center;
+		}
+
+			.icon.solution:before {
+				color: #fff !important;
+				opacity: 0.9 !important;
+			}
 
 		.icon.featured {
 			cursor: default;
