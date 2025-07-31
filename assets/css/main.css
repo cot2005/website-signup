@@ -137,7 +137,11 @@ input, select, textarea {
 		font-weight: 400;
 	}
 
-	em, i {
+	em {
+		font-size: 1.4em;
+	}
+
+	i {
 		font-style: italic;
 	}
 
@@ -1816,7 +1820,7 @@ input, select, textarea {
 		-ms-appearance: none;
 		appearance: none;
 		background: none;
-		border: solid 1px rgba(0, 0, 0, 0.2);
+		border: solid 1px rgba(0, 0, 0, 0.4);
 		border-radius: 0;
 		color: inherit;
 		display: block;
@@ -2354,6 +2358,13 @@ input, select, textarea {
 			.wrapper.style6 .button:hover {
 				background: rgba(255, 255, 255, 0.25) !important;
 			}
+		
+		.wrapper.style7 {
+			background-color: var(--main-color);
+			background-repeat: no-repeat, no-repeat;
+			background-size: 25em, 25em;
+			color: #fff;
+		}
 
 
 /* Header */
@@ -2398,9 +2409,14 @@ input, select, textarea {
 		}
 	}
 
+	@keyframes reveal-banner-header {
+		0%   { opacity: 0; }
+		100% { opacity: 1; }
+	}
+
 	#header {
 		background: #fff;
-		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
 		color: inherit;
 		cursor: default;
 		font-size: 0.8em;
@@ -2490,7 +2506,7 @@ input, select, textarea {
 						-webkit-transition: all 0.2s ease-in-out;
 						-ms-transition: all 0.2s ease-in-out;
 						transition: all 0.2s ease-in-out;
-						background: rgba(188, 202, 206, 0.15);
+						background: rgba(188, 202, 206, 0.2);
 					}
 
 					#header nav ul li.current > a {
@@ -2503,7 +2519,7 @@ input, select, textarea {
 			-ms-animation: reveal-header 0.5s;
 			animation: reveal-header 0.5s;
 		}
-
+/* 
 		#header.alt {
 			-moz-animation: none;
 			-webkit-animation: none;
@@ -2523,7 +2539,32 @@ input, select, textarea {
 
 				#header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
 					border: solid 1px;
+				} */
+
+
+
+		#header.alt {
+			-moz-animation: none;
+			-webkit-animation: none;
+			-ms-animation: none;
+			animation: reveal-banner-header 1.5s 0s ease-in;
+			background: rgba(52, 27, 43, 0.2);
+			box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+			color: #fff;
+			padding: 1em 1.5em;
+			position: absolute;
+		}
+
+			#header.alt nav {
+				right: 1.5em;
+				top: 0.75em;
+			}
+
+				#header.alt nav ul li.active > a, #header.alt nav ul li:hover > a {
+					border: solid 1px;
 				}
+
+
 
 /* Dropotron */
 
@@ -2633,7 +2674,7 @@ input, select, textarea {
 		cursor: default;
 		text-align: center;
 		min-height: 100vh;
-		padding: 8em 0;
+		padding: 12em 0;
 		position: relative; /* Required for positioning the :before */
 		overflow: hidden;
 	}
@@ -2662,6 +2703,7 @@ input, select, textarea {
 			-ms-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
 			background: rgba(52, 27, 43, 0.5);
+			box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
 			color: #fff;
 			display: inline-block;
 			opacity: 0;
