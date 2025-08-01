@@ -12,6 +12,7 @@
 :root {
   --main-color: #78B7C5;
   --accent-color: #83d3c9;
+  --text-color: rgba(61, 63, 64, 0.7);
 }
 
 
@@ -111,7 +112,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #7c8081;
+		color: var(--text-color);
 		font-family: 'Lato', sans-serif;
 		font-size: 15pt;
 		font-weight: 300;
@@ -133,8 +134,14 @@ input, select, textarea {
 			border-bottom-color: transparent;
 		}
 
-	strong, b {
+	strong {
 		font-weight: 400;
+	}
+
+	b {
+		font-size: 1.2em;
+		margin-bottom: 1.2em;
+		display: inline-block; /* allows top/bottom margin */
 	}
 
 	em {
@@ -146,6 +153,7 @@ input, select, textarea {
 	}
 
 	p, ul, ol, dl, table, blockquote {
+		font-size: 1.05em;
 		margin: 0 0 2em 0;
 	}
 
@@ -1925,7 +1933,7 @@ input, select, textarea {
 				width: 80%;         /* matches image width */
 				margin: 0 auto;     /* centers the text block */
 				font-size: inherit;   /* slightly smaller text */
-				color: rgba(124, 128, 129, 0.9);        /* dark gray for readability */
+				color: var(--text-color);        /* dark gray for readability */
 				padding-bottom: 2em; /* space below caption */
 			}
 
@@ -2403,6 +2411,15 @@ input, select, textarea {
 			background-repeat: no-repeat, no-repeat;
 			background-size: 25em, 25em;
 			color: #fff;
+			padding: 3em 5em 3em 5em;
+			line-height: 1.5em;
+		}
+
+		.wrapper.style8 {
+			background-color: var(--main-color);
+			background-repeat: no-repeat, no-repeat;
+			background-size: 25em, 25em;
+			color: #fff;
 		}
 
 
@@ -2856,7 +2873,7 @@ input, select, textarea {
 
 	#footer {
 		background: #E8EEF4;
-		color: #7c8081;
+		color: var(--text-color);
 		padding: 3em 5em;
 		text-align: center;
 	}
