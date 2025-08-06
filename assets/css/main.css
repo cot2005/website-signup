@@ -1935,6 +1935,7 @@ input, select, textarea {
 				font-size: inherit;   /* slightly smaller text */
 				color: var(--text-color);        /* dark gray for readability */
 				padding-bottom: 2em; /* space below caption */
+				text-align: left;
 			}
 
 
@@ -2372,6 +2373,12 @@ input, select, textarea {
 					color: #fff !important;
 				}
 
+			.wrapper.style2 header {
+				text-align: center;
+				font-size: 1.1em;
+				margin-bottom: 1.7em
+			}
+
 		.wrapper.style3 {
 			background: #fff;
 			color: inherit;
@@ -2392,6 +2399,11 @@ input, select, textarea {
 			background-size: 25em, 25em;
 			color: #fff;
 		}
+		.wrapper.style5 i {
+			display: block;   /* or inline-block */
+			text-align: left;
+		}
+
 
 
 		.wrapper.style6 {

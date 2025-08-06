@@ -27,7 +27,7 @@
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Otias-AI</a></h1>
+					<h1 id="logo"><a href="index.html">Avest-AI</a></h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
@@ -45,7 +45,7 @@
 						<h2>How it Works</h2>
 					</header>
 
-					<!-- One -->
+					<!-- How it works -->
 						<section class="wrapper style4 container">
 
 							<!-- Content -->
@@ -55,7 +55,7 @@
 											<h3>Our vision</h3>
 										</header>
 										<p>When I first explored the stock market, I quickly realized investing can be complex, time‑consuming, and risky. Unless you stick with index funds, you risk losing money fast. But if you avoid index funds in hopes of earning more than 6–8% annually, you’re faced with two options: spend hours every day researching and monitoring the market, or take chances on high‑risk assets. Both demand extensive market research and training to understand—something I and many others didn’t have. </br></br>
-										That’s where the idea for Otias-AI began: a platform that sits between passive index investing and high‑risk speculation. It empowers retail investors to potentially grow wealth faster by leveraging AI for investment guidance—even with no background in finance or machine learning. The platform has four main objectives:
+										That’s where the idea for Avest-AI began: a platform that sits between passive index investing and high‑risk speculation. It empowers retail investors to potentially grow wealth faster by leveraging AI for investment guidance—even with no background in finance or machine learning. The platform has four main objectives:
 										
 										<ol>
 											<li><strong>Performance</strong>: <i>Grow wealth as effectively as possible.</i></li>
@@ -64,8 +64,8 @@
 											<li><strong>Transparency</strong>: <i>Prove its past success, show everyone why we believe it works, for free.</i></li>
 										</ol>
 
-										Otias-AI achieves this by scouring the internet for data aligned with a chosen strategy, analyzes it alongside years of historical market data, and uses machine learning models to generate investment signals. These strategies are rigorously backtested, then connected to brokerage APIs for fully automated execution—removing user bias and error. </br></br>
-										All an investor needs to do is pick a stock list and select a proven, well‑documented strategy. Otias-AI handles the rest: market research, signal generation, and portfolio management. We believe this is just the beginning of a platform that can transform how retail investors build wealth.
+										Avest-AI achieves this by scouring the internet for data relevant to the chosen strategy, analyzes it alongside years of historical market data, and uses machine learning models to generate investment signals. These strategies are rigorously tested with historical data, then connected to brokerage APIs for fully automated execution—removing user bias and error. </br></br>
+										All an investor needs to do is pick a stock list and select a proven, well‑documented strategy. Avest-AI handles the rest: market research, signal generation, and portfolio management. We believe this is just the beginning of a platform that can transform how retail investors build wealth.
 										</p>
 										<a class="image reduced"><img src="images/diagram_1.jpeg" alt="" />
 											<p class="caption"><i>Integration of ML models, technical, fundamental, and sentiment data to drive principled strategies that help you grow your investments faster.</i></p>
@@ -75,8 +75,8 @@
 											<h3>What is it right now?</h3>
 										</header>
 										<p>Currently, we have eight modular investment strategies that can be paired with any stock list—of any size—to generate historical performance results for evaluation. Each strategy is trained on at least six years of historical data covering over 500 stocks, then validated on two or more years of data across 1,000+ stocks.</br></br>
-											We’re continuing to expand our strategy library by incorporating new types of market data and exploring novel analytical approaches that can inform better financial decisions. These innovations will drive the creation of even more strategies over time.</br></br>
-											For automated portfolio management, we have begun experimenting with Alpaca Securities as our initial brokerage (with more to come). With an Alpaca account, our platform can execute trades and manage portfolios in line with the selected strategy. This can also be done manually, as most strategies average fewer than ten stock orders per week.</br></br>
+											We’re continuing to expand our strategy library by incorporating new types of market data and exploring novel approaches that can inform greater investment decisions. These innovations will drive the creation of even more strategies over time.</br></br>
+											For automated portfolio management, we have begun experimenting with <a href="https://alpaca.markets/">Alpaca Securities</a> as an initial brokerage (with more to come). With an Alpaca account, our platform can execute trades and manage portfolios in line with the selected strategy. This can also be done manually, as most strategies average fewer than ten stock orders per week.</br></br>
 											Using this approach, we’ve been able to prototype and test our strategies, and combinations of them, in Alpaca accounts, consistently achieving returns that outperform the market.
 										</p>
 
@@ -85,7 +85,7 @@
 
 						</section>
 
-					<!-- Two -->
+					<!-- Components -->
 						<section class="wrapper style1 container special">
 							<div class="row">
 								<div class="col-4 col-12-narrower">
@@ -123,10 +123,10 @@
 							</div>
 						</section>
 
-				<!-- Table -->
-					<section class="wrapper style5 container special">
+				<!-- Tables -->
+					<section class="wrapper style5 container special" id="examples">
 
-						<!-- Content -->
+						<!-- List Table -->
 							<h3>Example Tables for constructing portfolios</h3>
 							<h3><strong>List Table</strong></h3>
 							<div class="table-wrapper">
@@ -140,24 +140,29 @@
 									</thead>
 									<tbody>
 										<tr>
+											<td>Div_Stocks</td>
+											<td>Stocks with dividend payments of >0.5% in the past year</td>
+											<td>317</td>
+										</tr>
+										<tr>
 											<td>High_Volatility</td>
 											<td>Stocks with high betas (>1.25) and medium liquidity (avg vol > 200k)</td>
 											<td>120</td>
 										</tr>
 										<tr>
-											<td>Stable_profit</td>
-											<td>Profitable stocks with revenue growth of >0% and a low P/E</td>
-											<td>243</td>
-										</tr>
-										<tr>
 											<td><a href="#" class="openModal" data-file="Index_stocks.txt">Index_Stocks</a></td>
-											<td>Non-overlapping Stocks in the S&P500, Dow-30, or Nasdaq-100</td>
+											<td>Stocks in the S&P500, Dow-30, or Nasdaq-100</td>
 											<td>506</td>
 										</tr>
 										<tr>
-											<td>Div_Stocks</td>
-											<td>Stocks with dividend payments of >0.5% in the past year</td>
-											<td>317</td>
+											<td>Stable_profit</td>
+											<td>Profitable stocks with revenue positive revenue growth and a low P/E</td>
+											<td>243</td>
+										</tr>
+										<tr>
+											<td>Strong_Buys</td>
+											<td>Stocks rated by analysts as buy or strong buy with positive revenue growth</td>
+											<td>430</td>
 										</tr>
 										<tr>
 											<td>Tech_Telecom</td>
@@ -203,6 +208,12 @@
 											<td>4.15</td>
 											<td>22.59</td>
 										</tr>
+										<tr>
+											<td>sx</td>
+											<td>Takes short positions with fast exits (in development)</td>
+											<td>TBD</td>
+											<td>TBD</td>
+										</tr>
 									</tbody>
 								</table>
 								<i>Select sample strategies with brief descriptions of their investment style and how long each investment is typically held for.</i>
@@ -211,7 +222,7 @@
 
 					<section class="wrapper style5 container special">
 
-							<!-- Content -->
+							<!-- Strategies Table -->
 							<h3>Example Portfolio Catalog</h3>
 
 							<div class="table-wrapper">
@@ -228,20 +239,20 @@
 									</thead>
 									<tbody>
 										<tr>
+											<td>Strong_Buys</td>
+											<td>s1</td>
+											<td>1.021</td>
+											<td>1.298</td>
+											<td>+1222.43%</td>
+											<td>coming soon</td>
+										</tr>
+										<tr>
 											<td>Tech_Telecom</td>
 											<td>s1</td>
 											<td>1.009</td>
 											<td>1.157</td>
 											<td>+648.2%</td>
 											<td><a href="reports/s1_Tech_Telecom.html">View Results</a></td>
-										</tr>
-										<tr>
-											<td>Index_Stocks</td>
-											<td>s2</td>
-											<td>1.604</td>
-											<td>1.018</td>
-											<td>+899.54%</td>
-											<td>coming soon</td>
 										</tr>
 										<tr>
 											<td>Stable_profit</td>
@@ -260,14 +271,6 @@
 											<td>coming soon</td>
 										</tr>
 										<tr>
-											<td>Index_Stocks</td>
-											<td>s6</td>
-											<td>1.505</td>
-											<td>1.111</td>
-											<td>+716%</td>
-											<td><a href="reports/s6_Index_Stocks.html">View Results</a></td>
-										</tr>
-										<tr>
 											<td>Div_Stocks</td>
 											<td>s8</td>
 											<td>0.911</td>
@@ -275,11 +278,19 @@
 											<td>+348.25%</td>
 											<td>coming soon</td>
 										</tr>
+										<tr>
+											<td>Index_Stocks</td>
+											<td>s8</td>
+											<td>1.466</td>
+											<td>1.047</td>
+											<td>+681.71%</td>
+											<td><a href="reports/s8_Index_Stocks.html">View Results</a></td>
+										</tr>
 									</tbody>
 								</table>
 							</div>
 							<i>Select sample portfolios from the combination of a preset stock list and a tested strategy. Go to the Report Summary to get more details on how this strategy performed.
-								In depth reports will also be made available.
+								In depth reports will also be made available. Portfolio performance metrics are calculated before taxes and fees.
 							</i>
 
 					</section>
@@ -305,7 +316,7 @@
 				<footer id="footer">
 
 					<ul class="copyright">
-						<li>&copy; Otias-AI</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Avest-AI</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 				</footer>
