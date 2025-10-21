@@ -3654,3 +3654,15 @@ input, select, textarea {
   border-color: var(--main-color);
   outline: none; /* Optional: remove default blue outline */
 }
+
+/* code for white links */
+.white-link {
+  color: white !important;
+  text-decoration: none;
+   font-weight: 500;
+}
+
+.white-link:hover {
+  color: gold !important;
+  font-weight: 500;
+}
