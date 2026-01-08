@@ -2734,7 +2734,7 @@ input, select, textarea {
 	#banner {
 		background-attachment: scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("../../images/map_6.jpeg");
+		background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("../../images/wall_st_1.png");
 		background-position: bottom left, bottom right, top center;
 		background-repeat: no-repeat, no-repeat, no-repeat;
 		background-size: 25em, 25em, cover;
@@ -2850,17 +2850,17 @@ input, select, textarea {
 /* CTA */
 
 	#cta {
-		background-attachment: scroll, scroll, fixed; /* Removed one scroll */
+		background-attachment: scroll, scroll, fixed;
 		background-color: #645862;
-		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("../../images/map_7_2.jpeg"); /* Removed overlay.png */
-		background-position: top left, top right, bottom left;
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("../../images/nyc_reflection.png");
+		background-position: top left, top right, center; /* Adjusted for better alignment */
 		background-repeat: no-repeat, no-repeat, no-repeat;
-		background-size: 25em, 25em, auto;
+		background-size: 25em, 25em, cover; /* Ensures the main image covers the entire area */
 		color: #fff;
 		padding: 5em;
 		text-align: center;
-		position: relative; /* Required for pseudo-element positioning */
-		overflow: hidden;   /* Ensures the overlay doesn't spill out */
+		position: relative;
+		overflow: hidden;
 	}
 
 
