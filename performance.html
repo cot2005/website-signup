@@ -16,7 +16,7 @@
 			gtag('config', 'G-FW4HSNYSPJ');
 		</script>
 
-		<title>how-it-works</title>
+		<title>Avest AI - Performance</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -75,7 +75,7 @@
 										<header>
 											<h3>Automation</h3>
 										</header>
-										<p>Though we cannot currently offer this at the moment, we are working with <a href="https://alpaca.markets/">Alpaca Securities</a> to see if this can be made available with existing accounts for the pre-release service.</p>
+										<p>Though we cannot currently offer this at the moment, we are working with <a href="https://alpaca.markets/" target="_blank" rel="noopener noreferrer">Alpaca Securities</a> to see if this can be made available with existing accounts for the pre-release service.</p>
 
 									</section>
 
@@ -427,6 +427,20 @@ window.addEventListener("click", function(event) {
   if (event.target == document.getElementById("myModal")) {
     document.getElementById("myModal").style.display = "none";
   }
+});
+
+// Attach click handler to each "View Results" link
+// This will open the report HTML files in a new tab
+
+document.querySelectorAll("a[href*='reports/']").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    const fileName = this.getAttribute("href"); // Get the report file path
+
+    // Open the report in a new tab
+    window.open(fileName, "_blank");
+  });
 });
 </script>
 
