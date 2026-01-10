@@ -97,64 +97,17 @@
 											<th>Strategy Index</th>
 											<th>Sharpe Ratio</th>
 											<th>Beta</th>
-											<th>Portfolio Performance (6yr)</th>
+											<th>Performance (6yr)</th>
 											<th>Report Summary</th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td>Strong_Buys</td>
-											<td>s1</td>
-											<td>1.161</td>
-											<td>1.118</td>
-											<td>+1207.49%</td>
-											<td>coming soon</td>
-										</tr>
-										<tr>
-											<td>Tech_Telecom</td>
-											<td>s1</td>
-											<td>0.975</td>
-											<td>0.998</td>
-											<td>+616.97%</td>
-											<td><a href="reports/s1_Tech_Telecom.html">View Results</a></td>
-										</tr>
-										<tr>
-											<td>Stable_profit</td>
-											<td>s2</td>
-											<td>1.252</td>
-											<td>0.628</td>
-											<td>+351.68%</td>
-											<td><a href="reports/s2_Stable_profit.html">View Results</a></td>
-										</tr>
-										<tr>
-											<td>High_Volatility</td>
-											<td>s6</td>
-											<td>0.395</td>
-											<td>0.813</td>
-											<td>+58.58%</td>
-											<td>coming soon</td>
-										</tr>
-										<tr>
-											<td>Div_Stocks</td>
-											<td>s8</td>
-											<td>1.002</td>
-											<td>0.858</td>
-											<td>+352.69%</td>
-											<td>coming soon</td>
-										</tr>
-										<tr>
-											<td>Index_Stocks</td>
-											<td>s8</td>
-											<td>1.615</td>
-											<td>0.756</td>
-											<td>+681.71%</td>
-											<td><a href="reports/s8_Index_Stocks.html">View Results</a></td>
-										</tr>
+										<!-- Data to be pulled from performance.csv file -->
 									</tbody>
 								</table>
 							</div>
-							<i>Select sample portfolios from the combination of a preset stock list and a tested strategy. Go to the Report Summary to get more details on how this strategy performed.
-								In depth reports will also be made available. Portfolio performance metrics are computed without capital gains taxes and dividends.
+							<i>Table of performances including the benchmarks S&P-500 ETF (SPY) and Nasdaq-100 ETF (QQQ) compared to select sample portfolios from the combination of a preset stock list and a tested strategy. Go to the <strong>Report Summary</strong> to get more details on how each strategy performed.
+								Portfolio performance metrics are computed without capital gains taxes and dividends.
 							</i>
 
 					</section>
@@ -187,7 +140,7 @@
 											<td>120</td>
 										</tr>
 										<tr>
-											<td><a href="#" class="openModal" data-file="Index_stocks.txt">Index_Stocks</a></td>
+											<td><a href="#" class="openModal" data-file="stock_lists/Index_Stocks.txt">Index_Stocks</a></td>
 											<td>Stocks in the S&P500, Dow-30, or Nasdaq-100</td>
 											<td>506</td>
 										</tr>
@@ -205,6 +158,11 @@
 											<td>Tech_Telecom</td>
 											<td>Stocks in the Tech and Telecom sectors</td>
 											<td>525</td>
+										</tr>
+										<tr>
+											<td><a href="#" class="openModal" data-file="stock_lists/Nasdaq_Biotech.txt">Nasdaq_Biotech</a></td>
+											<td>Stocks Nasdaq Biotechnology and S&P-500 Health Care lists</td>
+											<td>307</td>
 										</tr>
 									</tbody>
 								</table>
@@ -234,16 +192,16 @@
 											<td>20.41</td>
 										</tr>
 										<tr>
-											<td>s6</td>
-											<td>Conservative on entries but fast on exits with high portfolio diversity.</td>
-											<td>5.73</td>
-											<td>19.23</td>
+											<td>s5</td>
+											<td>Steady gains and capitalizes on dips.</td>
+											<td>4.29</td>
+											<td>16.65</td>
 										</tr>
 										<tr>
-											<td>s8</td>
-											<td>Long holds with high market exposure</td>
-											<td>4.15</td>
-											<td>22.59</td>
+											<td>s7</td>
+											<td>conservative on entries and exits with greater risk</td>
+											<td>5.17</td>
+											<td>14.28</td>
 										</tr>
 										<tr>
 											<td>sx</td>
@@ -297,6 +255,67 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+// Function to dynamically generate the Performance table from a CSV file
+async function generatePerformanceTable() {
+    try {
+        // Fetch the CSV file
+        const response = await fetch('stock_lists/performance.csv');
+        const csvText = await response.text();
+
+        // Parse the CSV data
+        const rows = csvText.split('\n').map(row => row.split(','));
+        const headers = rows.shift(); // Extract headers
+
+        // Map the headers to their indices
+        const headerMap = headers.reduce((map, header, index) => {
+            map[header.trim()] = index;
+            return map;
+        }, {});
+
+        // Ensure required columns exist
+        const requiredColumns = ['Stock List', 'Strategy Index', 'Sharpe Ratio', 'Beta', 'Performance (6yr)', 'Report Summary'];
+        if (!requiredColumns.every(col => col in headerMap)) {
+            console.error('CSV file is missing required columns.');
+            return;
+        }
+
+        // Generate the table rows dynamically
+        const tableBody = document.querySelector('table.alt tbody');
+        tableBody.innerHTML = ''; // Clear existing rows
+
+        rows.forEach(row => {
+            const tableRow = document.createElement('tr');
+
+            requiredColumns.forEach(col => {
+                const cell = document.createElement('td');
+                const cellValue = row[headerMap[col]];
+
+                if (col === 'Report Summary' && cellValue.trim().endsWith('.html')) {
+                    // Create a link for the Report Summary column if it ends with .html
+                    const link = document.createElement('a');
+                    link.href = cellValue.trim();
+                    link.textContent = 'View Results';
+                    link.target = '_blank'; // Open in a new tab
+                    cell.appendChild(link);
+                } else {
+                    cell.textContent = cellValue;
+                }
+
+                tableRow.appendChild(cell);
+            });
+
+            tableBody.appendChild(tableRow);
+        });
+    } catch (error) {
+        console.error('Error generating the Performance table:', error);
+    }
+}
+
+// Call the function to generate the table
+generatePerformanceTable();
+</script>
 
 	</body>
 </html>

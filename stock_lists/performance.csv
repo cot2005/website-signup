@@ -1,0 +1,8 @@
+Stock List,Strategy Index,Sharpe Ratio,Beta,Performance (6yr),Report Summary
+Nasdaq-100 (QQQ),-,-,-,271.03%,-
+S&P-500 (SPY),-,-,-,174.65%,-
+Tech_Telecom,s1,1.159,1.009,1302.4%,reports/s1_Tech_Telecom.html
+Index_Stocks,s2,1.655,0.796,1051.7%,reports/s2_Index_Stocks.html
+Strong_Buys,s2,1.265,1.133,2199.37%,reports/s2_Strong_Buys.html
+Nasdaq_Biotech,s5,1.09,0.884,1485.31%,reports/s5_Nasdaq_Biotech.html
+Russell_Profitable,s7,0.917,1.12,624.06%,reports/s7_Russell_Profitable.html
