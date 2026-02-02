@@ -1,0 +1,219 @@
+Symbol	Company_Name
+AAON	AAON, Inc.
+ACLS	Axcelis Technologies, Inc.
+ACMR	ACM Research, Inc.
+AEE	Ameren Corporation
+AEP	American Electric Power Company, Inc.
+AES	The AES Corporation
+ALG	Alamo Group, Inc.
+ALH	Alliance Laundry Holdings Inc.
+AME	AMETEK, Inc.
+AMPX	Amprius Technologies, Inc.
+APTV	Aptiv PLC
+AQN	Algonquin Power & Utilities Corp.
+ARLP	Alliance Resource Partners, L.P.
+ARRY	Array Technologies, Inc.
+ARTNA	Artesian Resources Corporation
+ATKR	Atkore Inc.
+AWI	Armstrong World Industries Inc
+AWK	American Water Works Company, Inc.
+AWR	American States Water Company
+AXIA	AXIA Energia SA Sponsored ADR
+BDC	Belden Inc
+BIP	Brookfield Infrastructure Partners LP Limited Partnership
+BLDP	Ballard Power Systems, Inc.
+BP	BP PLC Sponsored ADR
+BRC	Brady Corporation
+BTE	Baytex Energy Corp
+BTU	Peabody Energy Corporation
+CAT	Caterpillar, Inc.
+CECO	CECO Environmental Corp.
+CEG	Constellation Energy Corporation
+CEPU	Central Puerto S.A. Sponsored ADR
+CHRD	Chord Energy Corporation
+CIVI	Civitas Resources, Inc.
+CLB	Core Laboratories Inc.
+CLMT	Calumet, Inc
+CLNE	Clean Energy Fuels Corp.
+CMCO	Columbus McKinnon Corporation
+CMS	CMS Energy Corporation
+CNP	CenterPoint Energy, Inc (Holding Co)
+CNQ	Canadian Natural Resources Limited
+COP	ConocoPhillips
+CRC	California Resources Corporation
+CSAN	Cosan S.A. Sponsored ADR
+CTRA	Coterra Energy Inc.
+CTRI	Centuri Holdings, Inc.
+CVE	Cenovus Energy Inc
+CVX	Chevron Corporation
+CWCO	Consolidated Water Co. Ltd.
+CWEN	Clearway Energy, Inc.
+CWEN.A	Clearway Energy, Inc.
+CWT	California Water Service Group
+CXT	Crane NXT, Co.
+D	Dominion Energy, Inc.
+DAKT	Daktronics, Inc.
+DE	Deere & Company
+DINO	HF Sinclair Corporation
+DK	Delek US Holdings, Inc.
+DOO	BRP Inc.
+DOV	Dover Corporation
+DTE	DTE Energy Company
+DUK	Duke Energy Corporation (Holding Company)
+DVN	Devon Energy Corporation
+E	Eni S.p.A. Sponsored ADR
+EAF	GrafTech International Ltd.
+EC	Ecopetrol SA Sponsored ADR
+ED	Consolidated Edison, Inc.
+EDN	Empresa Distribuidora Y Comercializadora Norte S.A. Sponsored ADR Class B
+EE	Excelerate Energy, Inc.
+EFXT	Enerflex Ltd
+EIX	Edison International
+ELVA	Electrovaya Inc.
+EMA	Emera Incorporated
+ENS	EnerSys
+ENTG	Entegris, Inc.
+ENVX	Enovix Corporation
+EOG	EOG Resources, Inc.
+EOSE	Eos Energy Enterprises, Inc.
+EQNR	Equinor ASA Sponsored ADR
+ERII	Energy Recovery, Inc.
+ES	Eversource Energy (D/B/A)
+ESAB	ESAB Corporation
+ETR	Entergy Corporation
+EVRG	Evergy, Inc.
+EXC	Exelon Corporation
+FANG	Diamondback Energy, Inc.
+FE	FirstEnergy Corp.
+FLNC	Fluence Energy, Inc.
+FOXF	Fox Factory Holding Corp.
+FTS	Fortis Inc.
+GEV	GE Vernova Inc.
+GFF	Griffon Corporation
+GGG	Graco Inc.
+GHM	Graham Corporation
+GNE	Genie Energy Ltd.
+GNRC	Generac Holdings Inc.
+GPOR	Gulfport Energy Corporation
+GPRK	Geopark Ltd
+GRNT	Granite Ridge Resources, Inc.
+GTLS	Chart Industries, Inc.
+HCC	Warrior Met Coal, Inc.
+HESM	Hess Midstream LP
+HI	Hillenbrand Inc
+HLIO	Helios Technologies, Inc.
+HNI	HNI Corporation
+HNRG	Hallador Energy Company
+HSAI	Hesai Group Sponsored ADR
+HTO	H2O America
+HUBB	Hubbell Inc
+HY	Hyster-Yale, Inc.
+IDA	IDACORP, Inc.
+IEP	Icahn Enterprises L.P.
+IEX	IDEX Corporation
+INR	Infinity Natural Resources, Inc.
+IR	Ingersoll Rand Inc.
+ITT	ITT Inc.
+ITW	Illinois Tool Works Inc.
+JBL	Jabil Inc.
+JBTM	JBT Marel Corporation
+JCI	Johnson Controls International plc
+KAI	Kadant Inc
+KEP	Korea Electric Power Corporation Sponsored ADR
+KLIC	Kulicke and Soffa Industries, Inc.
+LITE	Lumentum Holdings Inc.
+LNN	Lindsay Corporation
+LNT	Alliant Energy Corporation
+LRCX	Lam Research Corporation
+MEC	Mayville Engineering Company, Inc.
+MGY	Magnolia Oil & Gas Corporation
+MIDD	The Middleby Corporation
+MKSI	MKS Inc.
+MNR	Mach Natural Resources LP
+MOD	Modine Manufacturing Company
+MPC	Marathon Petroleum Corporation
+MSEX	Middlesex Water Company
+MUR	Murphy Oil Corporation
+MVST	Microvast Holdings, Inc.
+MWA	MUELLER WATER PRODUCTS
+NDSN	Nordson Corporation
+NFE	New Fortress Energy Inc.
+NGS	Natural Gas Services Group, Inc.
+NJR	NewJersey Resources Corporation
+NPKI	NPK International Inc.
+NRG	NRG Energy, Inc.
+NRGV	Energy Vault Holdings, Inc.
+NWE	NorthWestern Energy Group, Inc.
+OGE	OGE Energy Corp
+OII	Oceaneering International, Inc.
+ORA	Ormat Technologies, Inc.
+OXY	Occidental Petroleum Corporation
+PAM	Pampa Energia SA Sponsored ADR
+PARR	Par Pacific Holdings, Inc. Common Stock
+PBF	PBF Energy Inc.
+PBR	Petroleo Brasileiro SA Sponsored ADR
+PBR.A	Petroleo Brasileiro SA Sponsored ADR Pfd
+PCAR	PACCAR Inc.
+PCG	Pacific Gas & Electric Co.
+PEG	Public Service Enterprise Group Incorporated
+PHIN	PHINIA Inc.
+PLPC	Preformed Line Products Company
+PNW	Pinnacle West Capital Corporation
+POET	POET Technologies Inc.
+POR	Portland General Electric Co
+POWL	Powell Industries, Inc.
+PPL	PPL Corporation
+PR	Permian Resources Corporation
+PSIX	Power Solutions International, Inc.
+PSX	Phillips 66
+RBC	RBC Bearings Incorporated
+RLX	RLX Technology, Inc. Sponsored ADR Class A
+ROCK	Gibraltar Industries, Inc.
+ROK	Rockwell Automation, Inc.
+RRX	Regal Rexnord Corporation
+SBS	Companhia de Saneamento Basico do Estado de Sao Paulo SABESP Sponsored ADR
+SD	SandRidge Energy, Inc.
+SEDG	SolarEdge Technologies, Inc.
+SERV	Serve Robotics Inc.
+SES	SES AI Corporation
+SHEL	Shell Plc Sponsored ADR
+SKYT	SkyWater Technology, Inc.
+SKYX	SKYX Platforms Corp.
+SM	SM Energy Company
+SMR	NuScale Power Corporation
+SO	Southern Company (The)
+SPXC	SPX Technologies, Inc.
+SRE	DBA Sempra
+STRT	STRATTEC SECURITY CORPORATION
+SU	Suncor Energy Inc.
+SYM	Symbotic Inc.
+TAC	TransAlta Corporation
+TALO	Talos Energy, Inc.
+TE	T1 Energy Inc.
+TGLS	Tecnoglass Inc.
+TGS	Transportadora de Gas del Sur SA Sponsored ADR Class B RegS
+THR	Thermon Group Holdings, Inc.
+THRM	Gentherm Inc
+TLN	Talen Energy Corporation
+TRGP	Targa Resources, Inc.
+TWI	Titan International, Inc. (DE)
+TXNM	TXNM Energy, Inc.
+TXO	TXO Partners, L.P.
+VELO	Velo3D, Inc.
+VIST	Vista Energy SAB de CV Sponsored ADR Class A
+VLO	Valero Energy Corporation
+VLTO	Veralto Corp
+VST	Vistra Corp.
+WAB	Westinghouse Air Brake Technologies Corporation
+WEC	WEC Energy Group, Inc.
+WMS	Advanced Drainage Systems, Inc.
+WOR	Worthington Enterprises, Inc.
+WSO	Watsco, Inc.
+WTI	W&T Offshore, Inc.
+WWD	Woodward, Inc.
+XEL	Xcel Energy Inc.
+XOM	Exxon Mobil Corporation
+YETI	YETI Holdings, Inc.
+YORW	The York Water Company
+YPF	YPF SA Sponsored ADR Class D
+ZWS	Zurn Elkay Water Solutions Corporation
