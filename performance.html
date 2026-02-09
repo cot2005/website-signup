@@ -64,7 +64,7 @@
 										<header>
 											<h3>Strategies</h3>
 										</header>
-										<p>Choose from four selected strategies and combine them with any of our preset stock lists to create a custom portfolio strategy.</p>
+										<p>Choose from multiple validated strategies and apply them to any preset stock list to create a custom portfolio strategy.</p>
 
 									</section>
 
@@ -75,7 +75,7 @@
 										<header>
 											<h3>Automation</h3>
 										</header>
-										<p>Though we cannot currently offer this at the moment, we are working with <a href="https://alpaca.markets/" target="_blank" rel="noopener noreferrer">Alpaca Securities</a> to see if this can be made available with existing accounts for the pre-release service.</p>
+										<p>Though we cannot currently offer this at the moment, we are working with <a href="https://alpaca.markets/" target="_blank" rel="noopener noreferrer">Alpaca Securities</a> to make this available with for the pre-release service.</p>
 
 									</section>
 
@@ -85,29 +85,17 @@
 
 				<!-- Tables -->
 					<section class="wrapper style5 container special">
-
 							<!-- Strategies Table -->
 							<h3>Sample Portfolio Catalog</h3>
-
 							<div class="table-wrapper">
 								<table class="alt">
-									<thead>
-										<tr>
-											<th>Stock List</th>
-											<th>Strategy Index</th>
-											<th>Sharpe Ratio</th>
-											<th>Beta</th>
-											<th>Performance (6yr)</th>
-											<th>Report Summary</th>
-										</tr>
-									</thead>
-									<tbody>
-										<!-- Data to be pulled from performance.csv file -->
-									</tbody>
+									<thead></thead>
+									<tbody></tbody>
 								</table>
 							</div>
 							<i>Table of performances including the benchmarks S&P-500 ETF (SPY) and Nasdaq-100 ETF (QQQ) compared to select sample portfolios from the combination of a preset stock list and a tested strategy. Go to the <strong>Report Summary</strong> to get more details on how each strategy performed.
-								Portfolio performance metrics are computed without capital gains taxes and dividends.
+								Portfolio performance metrics are computed without capital gains taxes and dividends.</br></br>
+								Sharpe Ratio: Risk-Adjusted Return; Beta: Market Volatility; CAGR: Compound Annual Growth Rate.
 							</i>
 
 					</section>
@@ -260,54 +248,59 @@
 // Function to dynamically generate the Performance table from a CSV file
 async function generatePerformanceTable() {
     try {
-        // Fetch the CSV file
         const response = await fetch('stock_lists/performance.csv');
         const csvText = await response.text();
 
-        // Parse the CSV data
-        const rows = csvText.split('\n').map(row => row.split(','));
-        const headers = rows.shift(); // Extract headers
+        // Parse CSV (simple parser, no quoted commas)
+        const rows = csvText
+            .trim()
+            .split('\n')
+            .map(row => row.split(','));
 
-        // Map the headers to their indices
-        const headerMap = headers.reduce((map, header, index) => {
-            map[header.trim()] = index;
-            return map;
-        }, {});
+        const headers = rows.shift().map(h => h.trim());
 
-        // Ensure required columns exist
-        const requiredColumns = ['Stock List', 'Strategy Index', 'Sharpe Ratio', 'Beta', 'Performance (6yr)', 'Report Summary'];
-        if (!requiredColumns.every(col => col in headerMap)) {
-            console.error('CSV file is missing required columns.');
-            return;
-        }
+        const table = document.querySelector('table.alt');
+        const thead = table.querySelector('thead');
+        const tbody = table.querySelector('tbody');
 
-        // Generate the table rows dynamically
-        const tableBody = document.querySelector('table.alt tbody');
-        tableBody.innerHTML = ''; // Clear existing rows
+        // Clear existing content
+        thead.innerHTML = '';
+        tbody.innerHTML = '';
 
+        /* ---------- Build THEAD ---------- */
+        const headerRow = document.createElement('tr');
+        headers.forEach(header => {
+            const th = document.createElement('th');
+            th.textContent = header;
+            headerRow.appendChild(th);
+        });
+        thead.appendChild(headerRow);
+
+        /* ---------- Build TBODY ---------- */
         rows.forEach(row => {
-            const tableRow = document.createElement('tr');
+            const tr = document.createElement('tr');
 
-            requiredColumns.forEach(col => {
-                const cell = document.createElement('td');
-                const cellValue = row[headerMap[col]];
+            headers.forEach((header, index) => {
+                const td = document.createElement('td');
+                const value = (row[index] || '').trim();
 
-                if (col === 'Report Summary' && cellValue.trim().endsWith('.html')) {
-                    // Create a link for the Report Summary column if it ends with .html
+                // Special handling for Report Summary
+                if (header === 'Report Summary' && value.endsWith('.html')) {
                     const link = document.createElement('a');
-                    link.href = cellValue.trim();
+                    link.href = value;
                     link.textContent = 'View Results';
-                    link.target = '_blank'; // Open in a new tab
-                    cell.appendChild(link);
+                    link.target = '_blank';
+                    td.appendChild(link);
                 } else {
-                    cell.textContent = cellValue;
+                    td.textContent = value;
                 }
 
-                tableRow.appendChild(cell);
+                tr.appendChild(td);
             });
 
-            tableBody.appendChild(tableRow);
+            tbody.appendChild(tr);
         });
+
     } catch (error) {
         console.error('Error generating the Performance table:', error);
     }
