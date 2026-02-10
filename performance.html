@@ -93,9 +93,12 @@
 									<tbody></tbody>
 								</table>
 							</div>
-							<i>Table of performances including the benchmarks S&P-500 ETF (SPY) and Nasdaq-100 ETF (QQQ) compared to select sample portfolios from the combination of a preset stock list and a tested strategy. Go to the <strong>Report Summary</strong> to get more details on how each strategy performed.
-								Portfolio performance metrics are computed without capital gains taxes and dividends.</br></br>
-								Sharpe Ratio: Risk-Adjusted Return; Beta: Market Volatility; CAGR: Compound Annual Growth Rate.
+							<p style="text-align: left;">
+								Table of performances including the benchmarks S&P-500 ETF (SPY) and Nasdaq-100 ETF (QQQ) compared to select sample portfolios from the combination of a preset stock list and a tested strategy. Go to the <strong>Report Summary</strong> to get more details on how each strategy performed.
+								Portfolio performance metrics are computed without capital gains taxes and dividends.
+							</p>
+							<i style="font-size: 16px;">
+								Sharpe Ratio: Risk-adjusted return relative to the U.S. 3-month Treasury yield (DGS3MO); Beta: Volatility relative to SPY; CAGR: Compound annual growth rate.
 							</i>
 
 					</section>
@@ -134,17 +137,17 @@
 										</tr>
 										<tr>
 											<td><a href="#" class="openModal" data-file="stock_lists/Nasdaq_Biotech.txt">Nasdaq_Biotech</a></td>
-											<td>Stocks Nasdaq Biotechnology and S&P-500 Health Care lists</td>
+											<td>Stocks Nasdaq Biotechnology and S&P-500 Healthcare lists</td>
 											<td>307</td>
 										</tr>
 										<tr>
 											<td>Stable_profit</td>
-											<td>Profitable stocks with revenue positive revenue growth and a low P/E</td>
+											<td>Profitable stocks with positive revenue growth and a low P/E</td>
 											<td>243</td>
 										</tr>
 										<tr>
 											<td>Strong_Buys</td>
-											<td>Stocks rated by analysts as buy or strong buy with positive revenue growth</td>
+											<td>Stocks rated by analysts as Buy/Outperform with positive revenue growth</td>
 											<td>430</td>
 										</tr>
 										<tr>
@@ -454,6 +457,38 @@ document.querySelectorAll("a[href*='reports/']").forEach(link => {
     window.open(fileName, "_blank");
   });
 });
+
+// Fetch the timestamp of the performance.csv file and display it
+async function displayFileTimestamp() {
+    try {
+        const response = await fetch('stock_lists/performance.csv', { method: 'HEAD' });
+        const lastModified = response.headers.get('Last-Modified');
+
+        if (lastModified) {
+            const date = new Date(lastModified);
+            const formattedDate = date.toLocaleDateString(); // Display only the date
+
+            const timestampElement = document.createElement('p');
+            timestampElement.textContent = `Performances last updated: ${formattedDate}`;
+            timestampElement.style.fontStyle = 'italic';
+            timestampElement.style.fontSize = '16px'; // Enforce font size
+            timestampElement.style.textAlign = 'left';
+
+            const section = document.querySelector('section.wrapper.style5.container.special');
+
+            // Add a blank line above the timestamp
+            const blankLine = document.createElement('br');
+            // section.appendChild(blankLine);
+
+            section.appendChild(timestampElement);
+        }
+    } catch (error) {
+        console.error('Error fetching file timestamp:', error);
+    }
+}
+
+// Call the function to display the timestamp
+displayFileTimestamp();
 </script>
 
 </body>

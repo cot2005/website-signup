@@ -1,6 +1,6 @@
 Stock List,Strategy Index,Sharpe Ratio,Beta,CAGR,Performance (7yr),Report Summary
-Nasdaq-100 (QQQ),-,-,-,20.49%,260.96%,-
-S&P-500 (SPY),-,-,-,15.72%,173.28%,-
+Nasdaq-100 (QQQ),-,0.831,1.146,20.49%,260.96%,-
+S&P-500 (SPY),-,0.791,1.0,15.72%,173.28%,-
 Tech_Telecom,s1,1.115,1.01,43.78%,1120.04%,reports/s1_Tech_Telecom.html
 Index_Stocks,s2,1.64,0.797,42.78%,1054.29%,reports/s2_Index_Stocks.html
 Strong_Buys,s2,1.22,1.134,56.25%,2063.41%,reports/s2_Strong_Buys.html
