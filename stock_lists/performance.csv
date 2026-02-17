@@ -1,8 +1,8 @@
 Stock List,Strategy Index,Sharpe Ratio,Beta,CAGR,Performance (7yr),Report Summary
-Nasdaq-100 (QQQ),-,0.831,1.146,20.49%,260.96%,-
-S&P-500 (SPY),-,0.791,1.0,15.72%,173.28%,-
-Tech_Telecom,s1,1.115,1.01,43.78%,1120.04%,reports/s1_Tech_Telecom.html
-Index_Stocks,s2,1.64,0.797,42.78%,1054.29%,reports/s2_Index_Stocks.html
-Strong_Buys,s2,1.22,1.134,56.25%,2063.41%,reports/s2_Strong_Buys.html
-Energy_Manufacturing,s5,1.283,0.778,46.26%,1144.32%,reports/s5_Energy_Manufacturing.html
-Nasdaq_Biotech,s5,1.117,0.871,53.77%,1795.59%,reports/s5_Nasdaq_Biotech.html
+Nasdaq-100 (QQQ),-,0.833,1.146,20.21%,256.38%,-
+S&P-500 (SPY),-,0.794,1.0,15.46%,169.77%,-
+Tech_Telecom,s1,1.081,1.011,41.89%,1021.25%,reports/s1_Tech_Telecom.html
+Index_Stocks,s2,1.642,0.797,42.53%,1048.89%,reports/s2_Index_Stocks.html
+Strong_Buys,s2,1.196,1.137,54.25%,1896.88%,reports/s2_Strong_Buys.html
+Energy_Manufacturing,s5,1.249,0.78,45.87%,1131.5%,reports/s5_Energy_Manufacturing.html
+Nasdaq_Biotech,s5,1.11,0.873,52.87%,1736.09%,reports/s5_Nasdaq_Biotech.html
